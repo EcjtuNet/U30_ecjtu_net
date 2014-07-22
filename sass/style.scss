@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* EcjtuNet sass modules lib
+ *
+ *致力于提高日新前端团队的开发效率
+ *
+ *@author           Venshy at EcjtuNet
+ *@version          0.1
+ *@last-time        2014.7.7
+ *
+ */
+
+
+/* 文件载入
+ ----------------------------------------------------------*/
+ @import  "data";                    /*  变量文件  */
+ @import  "reset";                   /*  css reset  */
+ @import  "mixin";                   /*  混入文件  */
+ @import  "layout/s-m-e";            /*  布局  */
+
+
+
+/* =page
+ ----------------------------------------------------------*/
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+h1, h2{
+    font-size:24px;
+}
+body {
+    background: #222;
+    background-repeat: repeat;
+
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+
+    -webkit-transition: 0.15s color ease;
+       -moz-transition: 0.15s color ease;
+        -ms-transition: 0.15s color ease;
+         -o-transition: 0.15s color ease;
+            transition: 0.15s color ease;
+
+    &:hover {
+        color: #f76f76;
+    }
+}
+/* =meny
+ ----------------------------------------------------------*/
+.meny {
+    display: none;
+    padding: 20px 8px 20px 20px;
+
+    overflow: auto;
+    background: #333;
+    color: #eee;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    ul {
+        margin-top: 10px;
+    
+        li {
+            display: inline-block;
+            width: 200px;
+            list-style: none;
+            font-size: 20px;
+            padding: 3px 10px;
+        
+            &:before {
+                content: '-';
+                margin-right: 5px;
+                color: rgba( 255, 255, 255, 0.5 );
+                }
+            }
+        }
+}
+
+/* =menu display
+ ----------------------------------------------------------*/
+.meny-arrow {
+    position: absolute;
+    z-index: 10;
+
+    border: 15px solid transparent;
+
+    -webkit-transition: opacity 0.4s ease 0.4s;
+       -moz-transition: opacity 0.4s ease 0.4s;
+        -ms-transition: opacity 0.4s ease 0.4s;
+         -o-transition: opacity 0.4s ease 0.4s;
+            transition: opacity 0.4s ease 0.4s;
+}
+    .meny-left .meny-arrow {
+        left: 14px;
+        top: 50%;
+        margin-top: -30px;
+        border-left: 25px solid rgba(201, 217, 242, 0.87);
+    }
+
+    .meny-active .meny-arrow {
+        opacity: 0;
+
+        -webkit-transition: opacity 0.2s ease;
+           -moz-transition: opacity 0.2s ease;
+            -ms-transition: opacity 0.2s ease;
+             -o-transition: opacity 0.2s ease;
+                transition: opacity 0.2s ease;
+    }
+
+/* =contents
+ ----------------------------------------------------------*/
+.contents {
+    background: url( $imagespath + "homebg.png" );
+    padding: 10px 40px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform-style: preserve-3d;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* =content
+ ----------------------------------------------------------*/
+ #content{
+    height: 100%;
+ }
+ .main{
+    height: 100%;
+ }
+ .main-wrap{
+    display: relative;
+    width: $main-width;
+    height: 100%;
+ }
+     #logo{
+        display: none;
+        position: absolute;
+        top: 46px;
+        width: 270px;
+        height: 80px;
+        font-size: 0;
+        background: $logo;
+     }
+     #picin{
+        position: absolute;
+        display: none;
+        top: 222px;
+        background: $theme-bg;
+        width: 970px;
+        height: 252px;
+        @include rotate( -14deg );
+     }
+

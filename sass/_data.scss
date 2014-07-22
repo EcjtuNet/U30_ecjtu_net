@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*
+ * 变量文件
+ */
+
+/* 路径
+ ----------------------------------------------------------*/
+ $imagespath : "../images/";
+ $spritepath : "../images/homesprite.png";
+
+/* 配色
+ ----------------------------------------------------------*/
+ $main-bg :              #fff;
+ $main-text-color :      #000;
+ $meny-arrow-color :     #c9d9f2;
+ $logo : url($spritepath) no-repeat 0 -252px;
+ $theme-bg : url($spritepath) no-repeat 0 0;
+
+ /* 布局
+ ----------------------------------------------------------*/
+ $sub-width :         auto;
+ $extra-width :       auto;
+ $header-height :     0;
+ $main-width :        1100px;
