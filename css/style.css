@@ -4135,25 +4135,44 @@ a {
  ----------------------------------------------------------*/
 .meny {
   display: none;
-  padding: 20px 8px 20px 20px;
+  padding: 28px 25px;
   overflow: auto;
   background: #333;
   color: #eee;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  .meny h2 {
+    font-size: 0;
+    background: url("../images/homesprite.png") no-repeat -1001px 0;
+    width: 203px;
+    height: 27px;
+    margin-bottom: 42px; }
   .meny ul {
     margin-top: 10px; }
     .meny ul li {
-      display: inline-block;
-      width: 200px;
-      list-style: none;
-      font-size: 20px;
-      padding: 3px 10px; }
-      .meny ul li:before {
-        content: '-';
-        margin-right: 5px;
-        color: rgba(255, 255, 255, 0.5); }
+      padding: 0 0 29px 31px;
+      list-style: none; }
+      .meny ul li a {
+        display: inline-block;
+        width: 100px;
+        height: 26px;
+        font-size: 0; }
+      .meny ul li:hover {
+        background: #333;
+        opacity: 0.1; }
+    .meny ul li:nth-child(1) a {
+      background: url("../images/homesprite.png") no-repeat -1001px -31px; }
+    .meny ul li:nth-child(2) a {
+      background: url("../images/homesprite.png") no-repeat -1001px -57px; }
+    .meny ul li:nth-child(3) a {
+      background: url("../images/homesprite.png") no-repeat -1001px -83px; }
+    .meny ul li:nth-child(4) a {
+      background: url("../images/homesprite.png") no-repeat -1001px -109px; }
+    .meny ul li:nth-child(5) a {
+      background: url("../images/homesprite.png") no-repeat -1001px -135px; }
+    .meny ul li:nth-child(6) a {
+      background: url("../images/homesprite.png") no-repeat -1001px -161px; }
 
 /* =menu display
  ----------------------------------------------------------*/
@@ -4168,7 +4187,7 @@ a {
   transition: opacity 0.4s ease 0.4s; }
 
 .meny-left .meny-arrow {
-  left: 14px;
+  left: 19px;
   top: 50%;
   margin-top: -30px;
   border-left: 25px solid rgba(201, 217, 242, 0.87); }
@@ -4215,7 +4234,6 @@ a {
   display: none;
   position: absolute;
   top: 46px;
-  left: 50px;
   width: 270px;
   height: 80px;
   font-size: 0;
@@ -4226,6 +4244,7 @@ a {
   position: absolute;
   display: none;
   top: 182px;
+  left: 50px;
   background: url("../images/homesprite.png") no-repeat 0 0;
   width: 970px;
   height: 252px;

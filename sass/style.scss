@@ -57,7 +57,7 @@ a {
  ----------------------------------------------------------*/
 .meny {
     display: none;
-    padding: 20px 8px 20px 20px;
+    padding: 28px 25px;
 
     overflow: auto;
     background: #333;
@@ -66,23 +66,39 @@ a {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+            
+    h2{
+        font-size: 0;
+        background: $meny-h2-bg;
+        width: 203px;
+        height: 27px;
+        margin-bottom: 42px;
+    }
     ul {
         margin-top: 10px;
     
         li {
-            display: inline-block;
-            width: 200px;
+            padding: 0 0 29px 31px;
             list-style: none;
-            font-size: 20px;
-            padding: 3px 10px;
-        
-            &:before {
-                content: '-';
-                margin-right: 5px;
-                color: rgba( 255, 255, 255, 0.5 );
-                }
+            
+            a{
+                display: inline-block;
+                width: 100px;
+                height: 26px;
+                font-size: 0;
+            }
+            
+            &:hover{
+                background: #333;
+                opacity: 0.1;
             }
         }
+        @for $i from 1 through 6 {
+            li:nth-child( #{$i} ) a {
+                background: url($spritepath) no-repeat -1001px $i*(-26px)-5px;
+            }
+        }
+    }
 }
 
 /* =menu display
@@ -100,7 +116,7 @@ a {
             transition: opacity 0.4s ease 0.4s;
 }
     .meny-left .meny-arrow {
-        left: 14px;
+        left: 19px;
         top: 50%;
         margin-top: -30px;
         border-left: 25px solid rgba(201, 217, 242, 0.87);
@@ -154,7 +170,6 @@ a {
         display: none;
         position: absolute;
         top: 46px;
-        left: 50px;
         width: 270px;
         height: 80px;
         font-size: 0;
@@ -165,6 +180,7 @@ a {
         position: absolute;
         display: none;
         top: 182px;
+        left: 50px;
         background: $theme-bg;
         width: 970px;
         height: 252px;
@@ -231,6 +247,7 @@ a {
             -740px -261px;
         width: 500px;
         height: 18px;
+        
         position:relative;
         top: 5px;
         right: 30px;
