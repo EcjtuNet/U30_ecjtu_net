@@ -12,6 +12,7 @@
 <body>
     <div class="meny">
         <h2>EcjtuNet U30</h2>
+        
         <ul>
         	<li><a href="http://u30.ecjtu.net" target="_blank">Home</a></li>
             <li><a href="http://www.ecjtu.net" target="_blank">EcjtuNet</a></li>
