@@ -35,9 +35,10 @@
     $('#nav li').mouseover(function() {
       return $(this).fadeTo(300, 0.60);
     });
-    return $('#nav li').mouseout(function() {
+    $('#nav li').mouseout(function() {
       return $(this).stop(true).fadeTo(300, 1);
     });
+    return console.log('随时欢迎加入我们 wtbhk@live.cn');
   });
 
 }).call(this);

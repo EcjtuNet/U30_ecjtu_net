@@ -27,4 +27,5 @@ $(document).ready ->
     $('#picin').fadeIn 300
     $('#nav li').mouseover -> $(this).fadeTo 300, 0.60
     $('#nav li').mouseout -> $(this).stop(true).fadeTo 300, 1
+    console.log '随时欢迎加入我们 wtbhk@live.cn'
     

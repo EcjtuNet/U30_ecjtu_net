@@ -45,8 +45,8 @@
             <div>
                 <p>
                     <span id="copyright">CopyRight 2001-2014 By [ecjtu.net] .All Rights Reserved</span>
-                    <a id="about" href="http://hr.ecjtu.net">关于我们</a>
-                    <a id="hr" href="http://about.ecjtu.net">加入我们</a>
+                    <a id="about" href="http://www.ecjtu.net/about">关于我们</a>
+                    <a id="hr" href="http://hr.ecjtu.net">加入我们</a>
                 </p>
             </div>
         </div>
