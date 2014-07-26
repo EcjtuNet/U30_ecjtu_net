@@ -4259,6 +4259,7 @@ a {
  ----------------------------------------------------------*/
 #footer {
   height: 6.25%;
+  min-width: 1100px;
   min-height: 25px;
   background: #121111;
   opacity: 0.64; }
