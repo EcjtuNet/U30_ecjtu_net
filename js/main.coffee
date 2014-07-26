@@ -23,6 +23,8 @@ $(document).ready ->
         contents = document.querySelector( '.contents' );
         contents.style.padding = '0px';
         contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
-    $('#logo').fadeIn 1000
-    $('#picin').fadeIn 500
+    $('#logo').fadeIn 300
+    $('#picin').fadeIn 300
+    $('#nav li').mouseover -> $(this).fadeTo 300, 0.60
+    $('#nav li').mouseout -> $(this).stop(true).fadeTo 300, 1
     
