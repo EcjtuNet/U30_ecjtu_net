@@ -4114,23 +4114,44 @@ a {
   padding-top: 78px;
   background: #edf1f6; }
 
-#banner-wrapper {
-  width: 100%;
-  height: 287px;
-  background: #071338; }
-
-#banner {
+.banner {
   position: relative;
-  width: 960px;
-  height: 287px;
-  margin: 0 auto; }
-
-.banner-img a {
-  position: absolute;
   width: 100%;
+  height: 287px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+ul.banner-img {
+  position: absolute;
+  width: 4098px;
   height: 287px; }
+  ul.banner-img li {
+    float: left;
+    height: 287px; }
+    ul.banner-img li a {
+      display: inline-block;
+      width: 1366px;
+      height: 287px; }
+
+.banner-btn {
+  position: absolute;
+  right: 24px;
+  bottom: 12px; }
+  .banner-btn li {
+    float: left;
+    display: inline-block; }
+    .banner-btn li a {
+      display: inline-block;
+      float: left;
+      width: 12px;
+      height: 12px;
+      margin: 0 2px;
+      background: url(../images/banner-btn.png) 0px 0px no-repeat; }
+      .banner-btn li a.selected {
+        background: url(../images/banner-btn.png) -12px 0px no-repeat; }
 
 #ecjtu {
+  display: block;
   background: url(../images/banner-wc.png) center center no-repeat; }
 
 #goal {
@@ -4144,7 +4165,7 @@ a {
   margin: 0 auto;
   padding: 48px 0; }
   #content ul li {
-    display: inline-block;
+    float: left;
     position: relative;
     margin: 0 12px 48px 12px; }
     #content ul li a {
@@ -4166,15 +4187,15 @@ a {
   width: 100%;
   height: 63px;
   background: #fff;
-  opacity: .5; }
+  opacity: .5;
+  transition: all .3s; }
   .intro h2, .intro p.write-info {
     height: 31px;
     padding: 0 63px 0 9px;
     color: #1b1b1b;
     font: normal 16px/31px Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif; }
 
-/* a:hover */
-.intro {
+a:hover .intro {
   display: block; }
 
 .social-info {
@@ -4207,7 +4228,7 @@ a#more {
     color: #4e82d4; }
 
 #header {
-  position: absolute;
+  position: fixed;
   height: 78px;
   background: #1b1b1b;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
@@ -4265,7 +4286,7 @@ a#om {
   top: 0;
   width: 100%;
   height: 60px;
-  background: #1b1b1b;
+  background: rgba(27, 27, 27, 0.85);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
 
 #header-fix-bar {
