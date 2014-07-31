@@ -1,0 +1,8 @@
+@import "../mixin";
+
+select {
+    @include appearance;
+    text-align : center;
+    background : #fff;
+    border : 0;
+}

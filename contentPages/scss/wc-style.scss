@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+/* EcjtuNet sass modules lib
+ *
+ *致力于提高日新前端团队的开发效率
+ *
+ *@author           Lancelot at EcjtuNet
+ *@version          0.1
+ *@last-time        2014.7.26
+ *
+ */
+
+
+/* 文件载入
+ ----------------------------------------------------------*/
+ @import  "data";                    /*  变量文件  */
+ @import  "reset";                   /*  css reset  */
+ @import  "mixin";                   /*  混入文件  */
+ @import  "layout/s-m-e";            /*  布局  */
+ @import  "csshake";                 /*  csshake  */
+
+
+/* =page
+ ----------------------------------------------------------*/
+
+a {
+	text-decoration: none;
+}
+
+//---container---
+#container {
+	padding-top: $header-height;
+	background: $container-bg;
+}
+
+//---banner---
+#banner-wrapper {
+	width: 100%;
+	height: 287px;
+	background: $banner-bg;
+}
+#banner {
+	position: relative;
+	width: 960px;
+	height: 287px;
+	margin: 0 auto;
+}
+.banner-img a {
+	position: absolute;
+	// top: (287px - 201px)/2;
+	// width: 404px;
+	// height: 201px;
+	// background: url($spritepath) -241px 0px no-repeat;
+	width: 100%;
+	height: 287px;
+}
+#ecjtu {
+	background: url(../images/banner-wc.png) center center no-repeat;
+}
+#goal {
+	background: url(../images/banner-goal.png) center center no-repeat;
+}
+#change {
+	background: url(../images/banner-change.png) center center no-repeat;
+}
+
+//---content---
+#content {
+	max-width: 982px;
+	margin: 0 auto;
+	padding: 48px 0;
+	ul li {
+		display: inline-block;
+		position: relative;
+		margin: 0 12px 48px 12px;
+
+		a {
+			float: left;
+			width: $container-essay-width;
+			height: $container-essay-height;
+			border-radius: 3px;
+			background: #e2e2e2;
+			box-shadow: inset 0 0 27px rgba(0,0,0,.1), 0px 1px rgba(255,255,255,.5);
+			transition: all .3s;
+			&:hover {
+				box-shadow: inset 0 0 36px rgba(0,0,0,.2), 0px 1px rgba(255,255,255,.5);
+			}
+		}
+	}
+}
+.intro {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 63px;
+	background: #fff;
+	opacity: .5;
+
+	h2, p.write-info {
+		height: 31px;
+		padding: 0 63px 0 9px;
+		color: $header-bg;
+		font: $intro-font;
+	}
+}
+/* a:hover */ .intro {
+	display: block;
+}
+.social-info {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 63px;
+	height: 63px;
+
+	p {
+		color: $header-bg;
+		font: normal 14px/31px Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif;
+	}
+}
+
+#more-wrapper {
+	padding: 0 12px;
+}
+a#more {
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	border-radius: 3px;
+	text-align: center;
+	text-shadow: 0px 1px rgba(255,255,255,.5);
+	background: #d4d4d4;
+	color: #878686;
+	font: normal 16px/40px Microsoft Yahei, Arial, sans-serif;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.2), 0px 1px rgba(255,255,255,.5);
+	transition: all .3s;
+	&:hover {
+		// background: darken(#d4d4d4, 5%);
+		// color: darken(#878686, 5%);
+		background: #c9d9f2;
+		color: darken(#c9d9f2, 30%);
+	}
+}
+
+
+
+
+//---header---
+#header {
+	position: absolute;
+	height: $header-height;
+	background: $header-bg;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+#header-bar {
+	position: relative;
+	width: 960px;
+	height: $header-height;
+	margin: 0 auto;
+
+	h1 {
+		position: absolute;
+		display: inline-block;
+		height: $header-height;
+
+		a {
+			display: inline-block;
+			width: 181px;
+			height: 53px;
+			margin: ($header-height - 53px)/2 0;
+			background: url($spritepath) 0 0 no-repeat;
+			transition: all .3s;
+		}
+	}
+}
+//---navigator---
+#nav {
+	height: $header-height;
+	padding-left: 181px;
+
+	ul {
+		width: 100%;
+		height: $header-height;
+
+		li {
+			float: left;
+			margin: ($header-height - (45px + 2px))/2 0 0 128px;
+		}
+	}
+	a {
+		display: inline-block;
+		width: 119px;
+		height: 45px;
+		transition: all .3s;
+	}
+}
+a#ed {
+	background: url($spritepath) -182px -45px no-repeat;
+	&:hover {
+		background: url($spritepath) -182px 0px no-repeat;
+	}
+}
+a#wc {
+	background: url($spritepath) -301px -45px no-repeat;
+	&:hover {
+		background: url($spritepath) -301px 0px no-repeat;
+	}
+}
+a#om {
+	background: url($spritepath) -421px -45px no-repeat;
+	&:hover {
+		background: url($spritepath) -421px 2px no-repeat;
+	}
+}
+//---fixed header---
+#header-fix {
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: $header-fix-height;
+	background: $header-bg;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+#header-fix-bar {
+	position: relative;
+	width: 960px;
+	height: $header-fix-height;
+	margin: 0 auto;
+
+	h1 {
+		position: absolute;
+		display: inline-block;
+		height: $header-fix-height;
+
+		a {
+			display: inline-block;
+			width: 172px;
+			height: 45px;
+			margin: ($header-fix-height - 45px)/2 0;
+			background: url($spritepath) 0 -55px no-repeat;
+			transition: all .3s;
+		}
+	}
+}
+//---fixed navigator---
+#nav-fix {
+	height: $header-fix-height;
+	padding-left: 172px;
+
+	ul {
+		width: 100%;
+		height: $header-fix-height;
+
+		li {
+			float: left;
+			margin: 11.5px 0 11.5px 159px;
+		}
+	}
+	a {
+		display: inline-block;
+		width: 80px;
+		height: 35px;
+		transition: all .3s;
+	}
+}
+a#ed-fix {
+	background: url($spritepath) -182px -126px no-repeat;
+	&:hover {
+		background: url($spritepath) -182px -91px no-repeat;
+	}
+}
+a#wc-fix {
+	background: url($spritepath) -263px -126px no-repeat;
+	&:hover {
+		background: url($spritepath) -263px -91px no-repeat;
+	}
+}
+a#om-fix {
+	background: url($spritepath) -348px -126px no-repeat;
+	&:hover {
+		background: url($spritepath) -348px -91px no-repeat;
+	}
+}
+
+//---footer---
+#footer {
+	width: 100%;
+	//height: $footer-height;
+	padding: 38px 0;
+	background: $footer-bg;
+	box-shadow: inset 0 18px 18px rgba(0,0,0,.5), 0 -3px 3px rgba(255,255,255,.2);
+
+	p {
+		text-align: center;
+		color: #fff;
+		font: $footer-font;
+
+		a {
+			color: #fff;
+			margin: 0 6px;
+			font: $footer-font;
+			transition: all .3s;
+			&:hover {
+				color: #c9d9f2;
+				//text-decoration: underline;
+			}
+		}
+	}
+}
+
+#link {
+	margin-bottom: 30px;
+}
+.copyright {
+	margin-bottom: 13px;
+
+	i {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin: 0 6px -6px 0;
+		background: url($spritepath) -183px -180px no-repeat;
+	}
+}
