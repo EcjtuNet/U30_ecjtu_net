@@ -38,7 +38,7 @@
     $('#nav li').mouseout(function() {
       return $(this).stop(true).fadeTo(300, 1);
     });
-    return console.log('随时欢迎加入我们 wtbhk@live.cn');
+    return console.log('啊呀！！被发现了么？(～o￣▽￣)～o ~随时欢迎加入我们唷~ wtbhk@live.cn');
   });
 
 }).call(this);
