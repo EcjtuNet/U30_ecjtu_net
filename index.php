@@ -15,11 +15,11 @@
         <h2>EcjtuNet U30</h2>
         <ul>
         	<li><a href="http://u30.ecjtu.net" target="_blank">Home</a></li>
-            <li><a href="http://pic.ecjtu.net" target="_blank">Picture</a></li>
             <li><a href="http://www.ecjtu.net" target="_blank">EcjtuNet</a></li>
             <li><a href="http://post.ecjtu.net" target="_blank">Post</a></li>
             <li><a href="http://swzl.ecjtu.net" target="_blank">Swzl</a></li>
             <li><a href="http://u.ecjtu.net" target="_blank">UCloud</a></li>
+            <li><a href="http://pic.ecjtu.net" target="_blank">Picture</a></li>
         </ul>
     </div>
     <div class="meny-arrow"></div>
