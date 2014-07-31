@@ -8,17 +8,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>U30</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/icon.png" />
 </head>
 <body>
     <div class="meny">
         <h2>EcjtuNet U30</h2>
         <ul>
         	<li><a href="http://u30.ecjtu.net" target="_blank">Home</a></li>
+            <li><a href="http://pic.ecjtu.net" target="_blank">Picture</a></li>
             <li><a href="http://www.ecjtu.net" target="_blank">EcjtuNet</a></li>
             <li><a href="http://post.ecjtu.net" target="_blank">Post</a></li>
             <li><a href="http://swzl.ecjtu.net" target="_blank">Swzl</a></li>
             <li><a href="http://u.ecjtu.net" target="_blank">UCloud</a></li>
-            <li><a href="http://pic.ecjtu.net" target="_blank">Picture</a></li>
         </ul>
     </div>
     <div class="meny-arrow"></div>
