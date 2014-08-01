@@ -12,34 +12,28 @@ $(document).ready(function() {
 	$(".banner-btn").append(addBtn);
 
 
+	// 自动切换图片
 	var page = 1;
-	var banner_ul = $(".banner-img");
-	setInterval(exchange, 3000);
+	setInterval(exchange, 5000);
 	function exchange () {
-
+		var banner_ul = $('.banner-img');
+		var backLeft = (img_count)*1366 +'px';
 		// 检测page的值，使当前的page与selected的小圆点一致
 		function btnSel () {
-			$('.banner-btn a').eq(page-1).addClass('selected')
-										 .siblings().removeClass('selected');
+			$('.banner-btn a').eq(page-1).parents().find('a').removeClass('selected');
+			$('.banner-btn a').eq(page-1).addClass('selected');
 		}
-		/*if (!banner_ul.is(':animated')) {
-			if (page == 1) {
-				banner_ul.animate({left: -1366px;}, fast);
-				page = img_count;
-				btnSel();
-			} else {
-				banner_ul.animate({left: banner_w}, fast);
-			};
-		}*/
-		if (!banner_ul.is(':animated')) {
-			if (page != img_count) {
-				banner_ul.animate({left: -1366px}, slow);
-				page++;
-			} else {
-				banner_ul.animate({left: (img_count-1)*1366px}, slow)
-			};
-		} else{};
-
+		// console.log(page);
+		// console.log(img_count);
+		if (page%img_count != 0) {
+			banner_ul.animate({left: '-=' + '1366px'}, 'slow');
+			page++;
+			btnSel();
+		} else {
+			banner_ul.animate({left: '0px'}, 'slow');
+			page = 1;
+			btnSel();
+		};
 	}
 
 	// 小圆点点击切换
