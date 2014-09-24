@@ -66,7 +66,7 @@ a {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-            
+
     h2{
         font-size: 0;
         background: $meny-h2-bg;
@@ -76,18 +76,18 @@ a {
     }
     ul {
         margin-top: 10px;
-    
+
         li {
             padding: 0 0 29px 31px;
             list-style: none;
-            
+
             a{
                 display: inline-block;
                 width: 100px;
                 height: 26px;
                 font-size: 0;
             }
-            
+
             &:hover{
                 background: #333;
                 opacity: 0.1;
@@ -187,7 +187,7 @@ a {
         @include rotate( -14deg );
      }
      #nav{
-        
+
             position: absolute;
             bottom: -10px;
             right: 92px;
@@ -199,7 +199,7 @@ a {
             padding-bottom: 31px;
             border-bottom: 10px solid $border-color;
             margin-left: 90px;
-            
+
         }
         .item-1{
             width: 156px;
@@ -226,14 +226,14 @@ a {
     min-height: 25px;
     background: #121111;
     opacity: 0.64;
-    
+
     div{
         height: 100%;
         width: $main-width;
         margin: 0 auto;
         position: relative;
     }
-    
+
     p{
         font-size:0;
         position: absolute;
@@ -243,11 +243,11 @@ a {
  }
      #copyright{
         display: inline-block;
-        background: url($spritepath) no-repeat 
+        background: url($spritepath) no-repeat
             -740px -261px;
         width: 500px;
         height: 18px;
-        
+
         position:relative;
         top: 5px;
         right: 30px;
@@ -264,7 +264,7 @@ a {
     #about{
         background: $about-bg;
     }
-    
+
     #hr{
         background: $hr-bg;
     }

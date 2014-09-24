@@ -11,10 +11,10 @@ $(document).ready(function() {
 	function nav () {
 		if (scrollY > h) {
 			header.hide();
-			headerFix.fadeIn(200);
+			headerFix.show();
 		}
 		if (scrollY < h) {
-			header.fadeIn(200);
+			header.show();
 			headerFix.hide();
 		};
 	}
