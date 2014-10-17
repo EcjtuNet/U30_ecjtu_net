@@ -34,9 +34,9 @@
                     </div>
                     <div id="nav"> 
                         <ul>
-                            <li class="item-1"><a href="">体验设计</a></li>
-                            <li class="item-2"><a href="">网站建设</a></li>
-                            <li class="item-3"><a href="">安全运维</a></li>
+                            <li class="item-1"><a href="http://u30.ecjtu.net/wp-content/themes/EcjtuNet/contentPages/ed.html">体验设计</a></li>
+                            <li class="item-2"><a href="http://u30.ecjtu.net/wp-content/themes/EcjtuNet/contentPages/wc.html">网站建设</a></li>
+                            <li class="item-3"><a href="http://u30.ecjtu.net/wp-content/themes/EcjtuNet/contentPages/om.html">安全运维</a></li>
                         </ul>
                     </div>
                 </div>
