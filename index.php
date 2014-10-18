@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>U30</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.min.css" />
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/icon.png" />
 </head>
 <body>

@@ -4266,6 +4266,11 @@ a {
     padding-bottom: 31px;
     border-bottom: 10px solid #c9d9f2;
     margin-left: 90px; }
+  #nav li a {
+    width: 153px;
+    height: 62px;
+    cursor: pointer;
+    display: inline-block; }
   #nav .item-1 {
     width: 156px;
     background: url("../images/homesprite.png") no-repeat -270px -251px; }
