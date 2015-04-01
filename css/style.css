@@ -1,25 +1,69 @@
 @charset "UTF-8";
-/* EcjtuNet sass modules lib
- *
- *致力于提高日新前端团队的开发效率
- *
- *@author           Venshy at EcjtuNet
- *@version          0.1
- *@last-time        2014.7.7
+/* U30.ecjtu.net
+ * @author            GeeKavalon
+ * @version           0.1.1
+ * @laast-time        2015.3.13
  *
  */
 /* 文件载入
  ----------------------------------------------------------*/
-/*
- * 变量文件
- */
 /* 路径
  ----------------------------------------------------------*/
 /* 配色
  ----------------------------------------------------------*/
 /* 布局
-----------------------------------------------------------*/
-/*  变量文件  */
+ ----------------------------------------------------------*/
+/* 字体
+ ----------------------------------------------------------*/
+/* 其他
+ ----------------------------------------------------------*/
+/* ::-moz-selection {
+	color: #fff;
+    background: lighten($theme-color, 20%);
+    text-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+::-webkit-selection {
+	color: #fff;
+    background: lighten($theme-color, 20%);
+    text-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+::selection {
+	color: #fff;
+    background: lighten($theme-color, 20%);
+    text-shadow: 0 2px 2px rgba(0,0,0,.2);
+} */
+/* 变量文件  */
+/* Font
+ --------------------------------------------------*/
+/* Web 字体  */
+/* 圆角
+ --------------------------------------------------*/
+/* 混入文件  */
+@keyframes arrowDown {
+  0% {
+    margin-bottom: -0.6em; }
+
+  100% {
+    margin-bottom: 0; } }
+@-webkit-keyframes arrowDown {
+  0% {
+    margin-bottom: -0.6em; }
+
+  100% {
+    margin-bottom: 0; } }
+@-moz-keyframes arrowDown {
+  0% {
+    margin-bottom: -0.6em; }
+
+  100% {
+    margin-bottom: 0; } }
+@-o-keyframes arrowDown {
+  0% {
+    margin-bottom: -0.6em; }
+
+  100% {
+    margin-bottom: 0; } }
+/* CSS3动画  */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -67,90 +111,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
- /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+a, a:link, a:hover, a:active {
+  text-decoration: none; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/*  css reset  */
-/* 圆角
- --------------------------------------------------*/
-/*  混入文件  */
-* {
-  margin: 0;
-  padding: 0; }
-
-#content {
-  overflow: hidden;
-  margin-top: 0; }
-
-.main {
-  width: 100%;
-  float: left; }
-  .main .main-wrap {
-    margin: 0 auto 0 auto; }
-
-.sub {
-  width: auto;
-  float: left;
-  margin-left: -100%; }
-
-.extra {
-  width: auto;
-  margin-left: -auto;
-  float: left; }
-
-#footer {
-  width: 100%; }
-
-#header {
-  width: 100%;
-  position: absolute;
-  top: 0; }
-
-/*  布局  */
+/* CSS Reset */
 .shake {
   display: inline-block;
   -webkit-transform-origin: center center;
@@ -4102,223 +4066,139 @@ table {
   90% {
     transform: translate(0px, 3px) rotate(5deg);
     opacity: 0.6; } }
-/*  csshake  */
-/* =page
- ----------------------------------------------------------*/
-html,
-body {
-  height: 100%;
-  overflow: hidden; }
+/* css hake  */
+/* 页面
+ ---------------------------------------------------------- */
+html, body {
+  background: transparent; }
 
-h1, h2 {
-  font-size: 24px; }
-
-body {
-  background: #222;
-  background-repeat: repeat;
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 16px;
-  color: #222; }
-
-a {
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: 0.15s color ease;
-  -moz-transition: 0.15s color ease;
-  -ms-transition: 0.15s color ease;
-  -o-transition: 0.15s color ease;
-  transition: 0.15s color ease; }
-  a:hover {
-    color: #f76f76; }
-
-/* =meny
- ----------------------------------------------------------*/
-.meny {
-  display: none;
-  padding: 28px 25px;
-  overflow: auto;
-  background: #333;
-  color: #eee;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  .meny h2 {
-    font-size: 0;
-    background: url("../images/homesprite.png") no-repeat -1001px 0;
-    width: 203px;
-    height: 27px;
-    margin-bottom: 42px; }
-  .meny ul {
-    margin-top: 10px; }
-    .meny ul li {
-      padding: 0 0 29px 31px;
-      list-style: none; }
-      .meny ul li a {
-        display: inline-block;
-        width: 100px;
-        height: 26px;
-        font-size: 0; }
-      .meny ul li:hover {
-        background: #333;
-        opacity: 0.1; }
-    .meny ul li:nth-child(1) a {
-      background: url("../images/homesprite.png") no-repeat -1001px -31px; }
-    .meny ul li:nth-child(2) a {
-      background: url("../images/homesprite.png") no-repeat -1001px -57px; }
-    .meny ul li:nth-child(3) a {
-      background: url("../images/homesprite.png") no-repeat -1001px -83px; }
-    .meny ul li:nth-child(4) a {
-      background: url("../images/homesprite.png") no-repeat -1001px -109px; }
-    .meny ul li:nth-child(5) a {
-      background: url("../images/homesprite.png") no-repeat -1001px -135px; }
-    .meny ul li:nth-child(6) a {
-      background: url("../images/homesprite.png") no-repeat -1001px -161px; }
-
-/* =menu display
- ----------------------------------------------------------*/
-.meny-arrow {
-  position: absolute;
-  z-index: 10;
-  border: 15px solid transparent;
-  -webkit-transition: opacity 0.4s ease 0.4s;
-  -moz-transition: opacity 0.4s ease 0.4s;
-  -ms-transition: opacity 0.4s ease 0.4s;
-  -o-transition: opacity 0.4s ease 0.4s;
-  transition: opacity 0.4s ease 0.4s; }
-
-.meny-left .meny-arrow {
-  left: 19px;
-  top: 50%;
-  margin-top: -30px;
-  border-left: 25px solid rgba(201, 217, 242, 0.87); }
-
-.meny-active .meny-arrow {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease;
-  -moz-transition: opacity 0.2s ease;
-  -ms-transition: opacity 0.2s ease;
-  -o-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease; }
-
-/* =contents
- ----------------------------------------------------------*/
-.contents {
-  background: url("../images/homebg.png");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform-style: preserve-3d;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* =content
- ----------------------------------------------------------*/
 #content {
-  height: 93.05556%;
-  border-bottom: 5px solid #c9d9f2;
-  min-width: 1100px;
-  min-height: 600px;
-  overflow: visible; }
+  width: 1090px;
+  margin: 0 auto; }
 
-.main {
-  height: 100%; }
+#logo a {
+  display: inline-block;
+  width: 217px;
+  height: 68px;
+  margin-top: 47px;
+  background: url(../imgs/logo.png); }
 
-.main-wrap {
+#link {
+  margin-top: 56px;
+  text-align: center; }
+  #link a {
+    display: inline-block;
+    width: 204px;
+    height: 16px;
+    margin-left: 5px;
+    background: url(../imgs/link.png); }
+
+#combine {
+  margin-top: 260px;
+  height: 24px; }
+
+#tech, #idea, #pd {
+  float: left;
+  height: 24px;
+  text-align: center; }
+  #tech a, #idea a, #pd a {
+    display: inline-block;
+    width: 54px;
+    height: 24px; }
+
+#tech {
+  margin-left: 62px;
+  width: 374px; }
+  #tech a {
+    background: url(../imgs/tech.png);
+    transition: .3s; }
+    #tech a:hover {
+      background: url(../imgs/tech_1.png); }
+
+#idea {
+  width: 222px; }
+  #idea a {
+    background: url(../imgs/idea.png);
+    transition: .3s; }
+    #idea a:hover {
+      background: url(../imgs/idea_1.png); }
+
+#pd {
+  width: 364px; }
+  #pd a {
+    background: url(../imgs/pd.png);
+    transition: .3s; }
+    #pd a:hover {
+      background: url(../imgs/pd_1.png); }
+
+#part {
+  height: 40px;
+  margin-top: 89px; }
+
+#ed, #wd, #om {
+  float: left;
+  height: 40px;
+  text-align: center; }
+  #ed a, #wd a, #om a {
+    display: inline-block;
+    width: 190px;
+    height: 40px; }
+
+#ed {
+  margin-left: 62px;
+  width: 374px; }
+  #ed a {
+    background: url(../imgs/ed.png);
+    transition: .3s; }
+    #ed a:hover {
+      background: url(../imgs/ed_1.png); }
+
+#wd {
+  width: 222px; }
+  #wd a {
+    background: url(../imgs/wd.png);
+    transition: .3s; }
+    #wd a:hover {
+      background: url(../imgs/wd_1.png); }
+
+#om {
+  width: 364px; }
+  #om a {
+    background: url(../imgs/om.png);
+    transition: .3s; }
+    #om a:hover {
+      background: url(../imgs/om_1.png); }
+
+#info {
   position: relative;
-  width: 1100px;
-  height: 100%; }
-
-#logo {
-  display: none;
-  position: absolute;
-  top: 46px;
-  width: 270px;
-  height: 80px;
-  font-size: 0;
-  background: url("../images/logo.png") no-repeat; }
-
-#picin {
-  font-size: 0;
-  position: absolute;
-  display: none;
-  top: 182px;
-  left: 50px;
-  background: url("../images/homesprite.png") no-repeat 0 0;
-  width: 970px;
-  height: 252px;
-  -webkit-transform: rotate(-14deg);
-  -moz-transform: rotate(-14deg);
-  -ms-transform: rotate(-14deg);
-  -o-transform: rotate(-14deg); }
-
-#nav {
-  position: absolute;
-  bottom: -10px;
-  right: 92px;
-  z-index: 1000; }
-  #nav li {
-    font-size: 0;
-    float: left;
-    height: 62px;
-    padding-bottom: 31px;
-    border-bottom: 10px solid #c9d9f2;
-    margin-left: 90px; }
-  #nav li a {
-    width: 153px;
-    height: 62px;
-    cursor: pointer;
-    display: inline-block; }
-  #nav .item-1 {
-    width: 156px;
-    background: url("../images/homesprite.png") no-repeat -270px -251px; }
-  #nav .item-2 {
-    width: 159px;
-    background: url("../images/homesprite.png") no-repeat -427px -251px; }
-  #nav .item-3 {
-    width: 153px;
-    background: url("../images/homesprite.png") no-repeat -586px -251px; }
-
-/* =footer
- ----------------------------------------------------------*/
-#footer {
-  height: 6.25%;
-  min-width: 1100px;
-  min-height: 25px;
-  background: #121111;
-  opacity: 0.64; }
-  #footer div {
-    height: 100%;
-    width: 1100px;
-    margin: 0 auto;
-    position: relative; }
-  #footer p {
-    font-size: 0;
+  margin-top: 47px;
+  text-align: center;
+  font: normal 18px/18px Microsoft Yahei, sans-serif;
+  color: #168360;
+  cursor: default; }
+  #info span {
     position: absolute;
-    right: 90px;
-    padding: 1% 0; }
+    right: 0; }
+    #info span a {
+      color: #29eaab;
+      margin-left: 21px;
+      transition: .3s; }
+      #info span a:hover {
+        color: #168360; }
 
-#copyright {
-  display: inline-block;
-  background: url("../images/homesprite.png") no-repeat -740px -261px;
-  width: 500px;
-  height: 18px;
-  position: relative;
-  top: 5px;
-  right: 30px; }
+#format {
+  z-index: -998;
+  position: absolute;
+  top: 15px;
+  width: 1090px;
+  height: 670px;
+  background: url(../imgs/format.png) center center; }
 
-#about, #hr {
-  display: inline-block;
-  width: 70px;
-  height: 18px;
-  margin-left: 18px; }
-  #about:hover, #hr:hover {
-    opacity: 0.6; }
-
-#about {
-  background: url("../images/homesprite.png") no-repeat -739px -295px; }
-
-#hr {
-  background: url("../images/homesprite.png") no-repeat -832px -295px; }
+#wrapper {
+  z-index: -999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../imgs/bg.png) repeat; }

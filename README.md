@@ -1,5 +1,2 @@
-# EcjtuNet U30 Team Blog
-
----
-
-this is a readme.md
+# U30_Ex
+New version for U30
