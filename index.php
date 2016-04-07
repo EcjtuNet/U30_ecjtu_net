@@ -12,15 +12,24 @@
 </head>
 <body>
     <div id="container">
-	<?php while(have_posts()):the_post();?>
-            <ul>
-                <li><a href="<?php the_permalink();?>">
-			<?php the_title();?></a>
-			<?php the_content();?>
-		</br>
-		</li>
-            </ul>
-	<?php endwhile; ?>
+        <div class="banner"></div>
+        <ul>
+    	<?php while(have_posts()):the_post();?>
+                
+            <li>
+                <div class="index-title">
+                    <a href="<?php the_permalink();?>"><?php the_title();?></a>
+                </div>
+                <article class="markdown-body"><?php the_content();?></article>
+                <div class="info">
+                    <span class="author"><?php the_author(); ?></span>
+                    <span class="time"><?php the_time( $d ); ?></span>
+                </div>
+    		    </br>
+    		</li>
+                
+    	<?php endwhile; ?>
+        </ul>
     </div>
     <header id="header">
     	<div id="header-bar">

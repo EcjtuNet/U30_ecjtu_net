@@ -4,9 +4,9 @@
  *
  *致力于提高日新前端团队的开发效率
  *
- *@author           Lancelot at EcjtuNet
+ *@author           EcjtuNet
  *@version          0.1
- *@last-time        2014.7.26
+ *@last-time        2016.4.7
  *
  */
 
@@ -17,7 +17,7 @@
  @import  "reset";                   /*  css reset  */
  @import  "mixin";                   /*  混入文件  */
  @import  "layout/s-m-e";            /*  布局  */
- @import  "csshake";                 /*  csshake  */
+ @import  "markdowncss";
 
 
 /* =page
@@ -31,26 +31,31 @@ a {
 #container {
 	padding-top: $header-height;
 	background: $container-bg;
-}
 
-//---banner---
-#banner-wrapper {
-	width: 100%;
-	height: 287px;
-	background: $banner-bg;
+	ul {
+		width: 1000px;
+		margin: 0 auto;
+		padding: 30px 0;
+
+		li + li {
+			border-top: 1px dashed #d9d9d9;
+		}
+	}
 }
-#banner {
-	position: relative;
-	width: 960px;
-	height: 287px;
-	margin: 0 auto;
-}
+	.index-title {
+		margin: 20px 0;
+		font: $index-title-font;
+		a {
+			color: #1b1b1b;
+		}
+	}
+	.author, .time {
+		margin-top: 8px;
+		font: $index-info-font;
+		color: #999	;
+	}
+
 #ecjtu {
-	/* position: absolute;
-	top: (287px - 201px)/2;
-	width: 404px;
-	height: 201px;
-	background: url($spritepath) -241px 0px no-repeat; */
 	width: 100%;
 	height: 287px;
 	background: url(../images/banner2.png) center center no-repeat;
@@ -284,4 +289,11 @@ a#om-fix:hover {
 }
 .copyright {
 	margin-bottom: 13px;
+}
+
+//---banner---
+.banner {
+	width: 100%;
+	height: 287px;
+	background: url($imagespath + 'banner-goal.png') no-repeat;
 }

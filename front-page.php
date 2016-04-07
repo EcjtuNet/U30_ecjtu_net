@@ -34,7 +34,7 @@
                     </div>
                     <div id="nav"> 
                         <ul>
-                            <li class="item-1"><a href="http://u30.ecjtu.net/archives/category/design">体验设计</a></li>
+                            <li class="item-1"><a href="http://localhost/wordpress/wordpress/archives/category/design">体验设计</a></li>
                             <li class="item-2"><a href="http://u30.ecjtu.net/archives/category/ued">网站建设</a></li>
                             <li class="item-3"><a href="http://u30.ecjtu.net/archives/category/dod">安全运维</a></li>
                         </ul>
