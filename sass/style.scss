@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/* EcjtuNet sass modules lib
+ *
+ *致力于提高日新前端团队的开发效率
+ *
+ *@author           Venshy at EcjtuNet
+ *@version          0.1
+ *@last-time        2014.7.7
+ *
+ */
+
+
+/* 文件载入
+ ----------------------------------------------------------*/
+ @import  "data";                    /*  变量文件  */
+ @import  "reset";                   /*  css reset  */
+ @import  "mixin";                   /*  混入文件  */
+ @import  "layout/s-m-e";            /*  布局  */
+ @import  "csshake";                 /*  csshake  */
+
+
+/* =page
+ ----------------------------------------------------------*/
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+h1, h2{
+    font-size:24px;
+}
+body {
+    background: #222;
+    background-repeat: repeat;
+
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+
+    -webkit-transition: 0.15s color ease;
+       -moz-transition: 0.15s color ease;
+        -ms-transition: 0.15s color ease;
+         -o-transition: 0.15s color ease;
+            transition: 0.15s color ease;
+
+    &:hover {
+        color: #f76f76;
+    }
+}
+/* =meny
+ ----------------------------------------------------------*/
+.meny {
+    display: none;
+    padding: 28px 25px;
+
+    overflow: auto;
+    background: #333;
+    color: #eee;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    h2{
+        font-size: 0;
+        background: $meny-h2-bg;
+        width: 203px;
+        height: 27px;
+        margin-bottom: 42px;
+    }
+    ul {
+        margin-top: 10px;
+
+        li {
+            padding: 0 0 29px 31px;
+            list-style: none;
+
+            a{
+                display: inline-block;
+                width: 100px;
+                height: 26px;
+                font-size: 0;
+            }
+
+            &:hover{
+                background: #333;
+                opacity: 0.1;
+            }
+        }
+        @for $i from 1 through 6 {
+            li:nth-child( #{$i} ) a {
+                background: url($spritepath) no-repeat -1001px ($i*(-26px)-5px);
+            }
+        }
+    }
+}
+
+/* =menu display
+ ----------------------------------------------------------*/
+.meny-arrow {
+    position: absolute;
+    z-index: 10;
+
+    border: 15px solid transparent;
+
+    -webkit-transition: opacity 0.4s ease 0.4s;
+       -moz-transition: opacity 0.4s ease 0.4s;
+        -ms-transition: opacity 0.4s ease 0.4s;
+         -o-transition: opacity 0.4s ease 0.4s;
+            transition: opacity 0.4s ease 0.4s;
+}
+    .meny-left .meny-arrow {
+        left: 19px;
+        top: 50%;
+        margin-top: -30px;
+        border-left: 25px solid rgba(201, 217, 242, 0.87);
+    }
+
+    .meny-active .meny-arrow {
+        opacity: 0;
+
+        -webkit-transition: opacity 0.2s ease;
+           -moz-transition: opacity 0.2s ease;
+            -ms-transition: opacity 0.2s ease;
+             -o-transition: opacity 0.2s ease;
+                transition: opacity 0.2s ease;
+    }
+
+/* =contents
+ ----------------------------------------------------------*/
+.contents {
+    background: url( $imagespath + "homebg.png" );
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform-style: preserve-3d;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* =content
+ ----------------------------------------------------------*/
+ #content{
+    height: 670/720*100%;
+    border-bottom: 5px solid $border-color;
+
+    min-width: 1100px;
+    min-height: 600px;
+    overflow: visible;
+ }
+ .main{
+    height: 100%;
+ }
+ .main-wrap{
+    position: relative;
+    width: $main-width;
+    height: 100%;
+ }
+     #logo{
+        display: none;
+        position: absolute;
+        top: 46px;
+        width: 270px;
+        height: 80px;
+        font-size: 0;
+        background: url($imagespath +'logo.png') no-repeat;
+     }
+     #picin{
+        font-size: 0;
+        position: absolute;
+        display: none;
+        top: 182px;
+        left: 50px;
+        background: $theme-bg;
+        width: 970px;
+        height: 252px;
+        @include rotate( -14deg );
+     }
+     #nav{
+
+            position: absolute;
+            bottom: -10px;
+            right: 92px;
+            z-index: 1000;
+        li{
+            font-size: 0;
+            float: left;
+            height: 62px;
+            padding-bottom: 31px;
+            border-bottom: 10px solid $border-color;
+            margin-left: 90px;
+
+        }
+            li a{
+                width: 153px;
+                height: 62px;
+                cursor: pointer;
+                display: inline-block;
+            }
+        .item-1{
+            width: 156px;
+            background: url($spritepath) no-repeat
+                -270px -251px;
+        }
+        .item-2{
+            width: 159px;
+            background: url($spritepath) no-repeat
+                -427px -251px;
+        }
+        .item-3{
+            width: 153px;
+            background: url($spritepath) no-repeat
+                -586px -251px;
+        }
+     }
+
+/* =footer
+ ----------------------------------------------------------*/
+ #footer{
+    height: 45/720*100%;
+    min-width: 1100px;
+    min-height: 25px;
+    background: #121111;
+    opacity: 0.64;
+
+    div{
+        height: 100%;
+        width: $main-width;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    p{
+        font-size:0;
+        position: absolute;
+        right: 90px;
+        padding: 1% 0;
+    }
+ }
+     #copyright{
+        display: inline-block;
+        background: url($spritepath) no-repeat
+            -740px -261px;
+        width: 500px;
+        height: 18px;
+
+        position:relative;
+        top: 5px;
+        right: 30px;
+    }
+    #about, #hr{
+        display: inline-block;
+        width: 70px;
+        height: 18px;
+        margin-left:18px;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    #about{
+        background: $about-bg;
+    }
+
+    #hr{
+        background: $hr-bg;
+    }
