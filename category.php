@@ -7,12 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>U30-Index</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/index-style.css" />
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&subset=latin%2Clatin-ext&ver=3.9.6" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/index-style.min.css" />
 </head>
 <body>
     <div id="container">
-        <div class="banner"></div>
+        <?php
+            $category = get_the_category();
+            echo "<div class='banner banner-" . $category[0]->cat_name . "'></div>";
+        ?>
         <ul>
     	<?php while(have_posts()):the_post();?>
                 

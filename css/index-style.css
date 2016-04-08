@@ -912,5 +912,13 @@ a#om-fix:hover {
 
 .banner {
   width: 100%;
-  height: 287px;
-  background: url("../images/banner-goal.png") no-repeat; }
+  height: 287px; }
+
+.banner-design {
+  background: #26c9fe url("../images/banner-design.png") no-repeat center; }
+
+.banner-dod {
+  background: #f3ff68 url("../images/banner-dod.png") no-repeat center; }
+
+.banner-ued {
+  background: #7bff83 url("../images/banner-ued.png") no-repeat center; }
