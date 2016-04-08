@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id="container">
+        <div class="banner"></div>
         <ul>
     	<?php while(have_posts()):the_post();?>
                 
