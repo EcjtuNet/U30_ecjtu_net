@@ -33,22 +33,5 @@
     	<?php endwhile; ?>
         </ul>
     </div>
-    <header id="header">
-    	<div id="header-bar">
-    		<h1><a href="http://u30.ecjtu.net"></a></h1>
-    		<nav id="nav">
-    			<ul>
-    				<li><a id="ed" href="http://u30.ecjtu.net/archives/category/design"></a></li>
-    				<li><a id="wc" href="http://u30.ecjtu.net/archives/category/ued"></a></li>
-    				<li><a id="om" href="http://u30.ecjtu.net/archives/category/dod"></a></li>
-    			</ul>
-    		</nav>
-    	</div>
-    </header>
-    <footer id="footer">
-        <p id="link"><a href="">关于我们</a>|<a href="">网站地图</a>|<a href="">人才招聘</a>|<a href="">日新维基</a></p>
-        <p class="copyright">华东交通大学团委、学工处 [<a href="">版权所有 交大日新</a>] 赣ICP备05003322号 日新工作室 维护</p>
-        <p class="copyright">Copyright 2001-2014 By [<a href="">ecjtu.net</a>].All Rights Reserved</p>
-    </footer>
-</body>
-</html>
+    <?php get_header() ?>
+    <?php get_footer() ?>
