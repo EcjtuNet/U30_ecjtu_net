@@ -20,7 +20,7 @@
                 </div>
                 <div class="info">
                     <span class="author"><?php the_author(); ?></span>
-                    <span class="time"><?php the_time( $d ); ?></span>
+                    <span class="time"><?php the_date('F j, Y'); ?>  at <?php the_time( $d ); ?></span>
                 </div>
     		    </br>
                 <article class="markdown-body"><?php the_content();?></article>
