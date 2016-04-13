@@ -28,9 +28,11 @@
                     <span class="time"><?php the_time( ); ?></span>
                 </div>
     		    </br>
-    		</li>
-                
-    	<?php endwhile; ?>
+    		</li> 
+        
+    	<?php endwhile; ?> 
+        <?php next_posts_link(); ?>
+        <?php previous_posts_link(); ?>
         </ul>
     </div>
     <?php get_header() ?>
