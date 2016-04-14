@@ -6,7 +6,7 @@
 <div>
     <div>
         <?php if(post_password_required()): ?>
-            <p>Please Login in </p>
+            <p>请登陆先！ </p>
         <?php return;
             endif;?>
     </div>
@@ -25,14 +25,14 @@
 
     <div>
         <?php if(! comments_open()): ?>
-        <p> Comments are closed </p>
+        <p> 暂时不开放评论功能 </p>
         <?php endif; ?>
         <?php endif; ?>
     
         <?php if(is_user_logged_in()){
             comment_form();
         }else{
-            echo "<p>Please login in to comment</p>";
+            echo "<p>登陆后才能评论啊！</p>";
         } 
         ?>
     </div>

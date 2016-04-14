@@ -8,31 +8,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>U30-Index</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/index-style.min.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/theme-my-login.min.css">
 </head>
 <body>
     <div id="container">
-        <ul>
-    	<?php while(have_posts()):the_post();?>
-                
-            <li>
-                <div class="index-title">
-                    <a href="<?php the_permalink();?>"><?php the_title();?></a>
-                </div>
-                <div class="info">
-                    <span class="author"><?php the_author(); ?></span>
-                    <span class="time"><?php the_date('F j, Y'); ?>  at <?php the_time( ); ?></span>
-                </div>
-    		    </br>
-                <article class="markdown-body"><?php the_content();?></article>
-                <?php
-                    if(comments_open() || get_comments_number()){
-                        comments_template();
-                    }
-                ?>
-    		</li>
-                
-    	<?php endwhile; ?>
-        </ul>
+        <div id="login-box">
+        <?php while(have_posts()):the_post();?>
+            <div class="index-title">
+                <a href="<?php the_permalink();?>"><?php the_title();?></a>
+            </div>
+            </br>
+            <?php the_content();?>         
+        <?php endwhile; ?>
+        </div>
     </div>
     <?php get_header() ?>
     <?php get_footer() ?>
