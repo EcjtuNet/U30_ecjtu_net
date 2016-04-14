@@ -694,6 +694,47 @@ table {
   position: relative;
   border-color: #4078c0; }
 
+.comment {
+  border-top: 5px solid #d9d9d9;
+  min-height: 80px;
+  margin-top: 30px;
+  padding-top: 30px;
+  position: relative;
+  clear: both; }
+  .comment .children li {
+    border-top: 1px solid #d9d9d9; }
+  .comment p {
+    padding-left: 80px;
+    margin-top: -36px;
+    font-size: 14px; }
+  .comment .fn {
+    color: gray;
+    text-decoration: none; }
+  .comment .avatar {
+    border-radius: 30px;
+    -moz-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 3px 3px 10px #999; }
+  .comment .fn, .comment .says {
+    position: relative;
+    top: -40px;
+    left: 16px; }
+  .comment .comment-meta, .comment .reply {
+    position: absolute;
+    top: 36px;
+    font: 12px/12px Georgia, Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif; }
+    .comment .comment-meta a, .comment .reply a {
+      color: gray; }
+    .comment .comment-meta a:hover, .comment .reply a:hover {
+      color: #4d5256; }
+  .comment .comment-meta {
+    right: 30px; }
+  .comment .reply {
+    right: 0; }
+  .comment .says {
+    font: 12px/12px Georgia, Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif;
+    color: gray;
+    padding-left: 6px; }
+
 /* =page
  ----------------------------------------------------------*/
 a {
@@ -714,6 +755,8 @@ a {
   font: bold 32px/32px Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif; }
   .index-title a {
     color: #1b1b1b; }
+    .index-title a:hover {
+      color: #007998; }
 
 .author, .time {
   margin-top: 8px;

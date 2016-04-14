@@ -1,0 +1,65 @@
+.comment {
+    border-top: 5px solid #d9d9d9;
+    min-height: 80px;
+    margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+    clear: both;
+
+
+    .children li {
+        border-top: 1px solid #d9d9d9;
+
+    }
+
+    .comment-author {
+        
+    }
+    p {
+        padding-left: 80px;
+        margin-top: -36px;
+        font-size: 14px;
+    }
+    .fn {
+        color: gray;
+        text-decoration: none;
+    }
+    .avatar {
+        border-radius: 30px;
+        -moz-box-shadow: 10px 10px 5px #888888;
+        box-shadow: 3px 3px 10px #999;
+    }
+    .fn, .says {
+        position: relative;
+        top: -40px;
+        left: 16px;
+    }
+
+    .comment-meta, .reply {
+        position: absolute;
+        top: 36px;
+        font: $index-info-font;
+
+        a { 
+            color: gray ;
+        }
+
+        a:hover {
+            color: #4d5256;
+        }
+    }
+
+    .comment-meta {
+        right: 30px;
+    }
+
+    .reply {
+        right: 0;
+    }
+
+    .says {
+        font: $index-info-font;
+        color:  gray;
+        padding-left: 6px;
+    }
+}
