@@ -52,15 +52,16 @@
 	width: auto;
 }
 
-.tml .tml-action-links {
+#container  .tml .tml-action-links {
 	display: inline-block;
+	width: auto;
 	list-style: none;
 	margin: 0.5em auto;
 	padding: 0;
 	text-align: center;
 }
 
-.tml .tml-action-links li {
+#container .tml .tml-action-links li {
 	border: none;
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 	float: left;
