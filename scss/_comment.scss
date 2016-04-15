@@ -4,7 +4,7 @@
 }
 
 .error {
-
+    border-top: 2px solid #d9d9d9;
 }
 
 .comment {
@@ -89,16 +89,16 @@
 
 }
 
-.logged-in-as {
+.logged-in-as, .error {
     font: $index-title-font;
     font-size: 20px;
     padding:20px 0;
 
     a {
-        color: #1b1b1b;
+        color: #007998;
 
         &:hover {
-            color: #007998
+            color: #7fbccb;
         }
     }
 }

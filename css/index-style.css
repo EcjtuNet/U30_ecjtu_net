@@ -698,6 +698,9 @@ table {
   border-top: 5px solid #d9d9d9;
   margin-top: 30px; }
 
+.error {
+  border-top: 2px solid #d9d9d9; }
+
 .comment {
   min-height: 80px;
   padding-top: 30px;
@@ -752,14 +755,14 @@ table {
     font: normal 14px/1.4 Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif;
     font-weight: bold; }
 
-.logged-in-as {
+.logged-in-as, .error {
   font: bold 32px/32px Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif;
   font-size: 20px;
   padding: 20px 0; }
-  .logged-in-as a {
-    color: #1b1b1b; }
-    .logged-in-as a:hover {
-      color: #007998; }
+  .logged-in-as a, .error a {
+    color: #007998; }
+    .logged-in-as a:hover, .error a:hover {
+      color: #7fbccb; }
 
 #reply-title {
   display: none; }
