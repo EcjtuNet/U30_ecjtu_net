@@ -694,15 +694,19 @@ table {
   position: relative;
   border-color: #4078c0; }
 
-.comment {
+#u30-comment {
   border-top: 5px solid #d9d9d9;
+  margin-top: 30px; }
+
+.comment {
   min-height: 80px;
-  margin-top: 30px;
   padding-top: 30px;
+  margin-bottom: 20px;
   position: relative;
   clear: both; }
   .comment .children li {
-    border-top: 1px solid #d9d9d9; }
+    margin-top: 30px;
+    border-top: 1px dashed #d9d9d9; }
   .comment p {
     padding-left: 80px;
     margin-top: -36px;
@@ -734,6 +738,47 @@ table {
     font: 12px/12px Georgia, Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif;
     color: gray;
     padding-left: 6px; }
+
+#respond {
+  border-top: 2px solid #d9d9d9;
+  position: relative; }
+  #respond #submit {
+    cursor: pointer;
+    border: 2px solid #ccd3d7;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    font: normal 14px/1.4 Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif;
+    font-weight: bold; }
+
+.logged-in-as {
+  font: bold 32px/32px Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif;
+  font-size: 20px;
+  padding: 20px 0; }
+  .logged-in-as a {
+    color: #1b1b1b; }
+    .logged-in-as a:hover {
+      color: #007998; }
+
+#reply-title {
+  display: none; }
+
+.comment-form-comment textarea {
+  border: 2px solid #ccd3d7;
+  border-radius: 4px;
+  cursor: text;
+  resize: none;
+  display: block;
+  padding: 6px 10px 8px;
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  min-height: 44px;
+  line-height: 1.4;
+  font: normal 14px/1.4 Microsoft Yahei, Microsoft Jhenghei, Arial, sans-serif; }
+.comment-form-comment label {
+  display: none; }
 
 /* =page
  ----------------------------------------------------------*/

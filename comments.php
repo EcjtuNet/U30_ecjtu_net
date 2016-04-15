@@ -3,10 +3,10 @@
 *Template for Comments
 **/
 ?>
-<div>
+<div id="u30-comment">
     <div>
         <?php if(post_password_required()): ?>
-            <p><a href='http://u30.ecjtu.net/register'>请登陆先！</a> </p>
+            <p><a href='http://u30.ecjtu.net/login'>请登陆先！</a> </p>
         <?php return;
             endif;?>
     </div>
@@ -26,13 +26,13 @@
 
     <div>
         <?php if(! comments_open()): ?>
-        <p> 暂时不开放评论功能 </p>
+        <p class="error"> 暂时不开放评论功能 </p>
         <?php endif; ?>
     
         <?php if(is_user_logged_in()){
             comment_form();
         } else {
-            echo "<p><a href='http://u30.ecjtu.net/register'>登陆</a>后才能评论啊！</p>";
+            echo "<p class='error'><a href='http://u30.ecjtu.net/login'>登陆评论</a></p>";
         } 
         ?>
     </div>
