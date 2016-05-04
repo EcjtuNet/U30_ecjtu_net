@@ -32,7 +32,7 @@
         <?php if(is_user_logged_in()){
             comment_form();
         } else {
-            echo "<p class='error'><a href='http://u30.ecjtu.net/login'>登陆评论</a></p>";
+            echo "<p class='error'><a href=".wp_login_url(get_permalink()).">登陆评论</a></p>";
         } 
         ?>
     </div>
