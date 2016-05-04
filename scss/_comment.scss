@@ -1,0 +1,133 @@
+#u30-comment {
+    border-top: 5px solid #d9d9d9;
+    margin-top: 30px;
+}
+
+.error {
+    border-top: 2px solid #d9d9d9;
+}
+
+.comment {
+    min-height: 80px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    clear: both;
+
+    .children li {
+        margin-top: 30px;
+        border-top: 1px dashed #d9d9d9;
+    }
+
+    .comment-author {
+        
+    }
+    p {
+        padding-left: 80px;
+        margin-top: -36px;
+        font-size: 14px;
+    }
+    .fn {
+        color: gray;
+        text-decoration: none;
+    }
+    .avatar {
+        border-radius: 30px;
+        -moz-box-shadow: 10px 10px 5px #888888;
+        box-shadow: 3px 3px 10px #999;
+    }
+    .fn, .says {
+        position: relative;
+        top: -40px;
+        left: 16px;
+    }
+
+    .comment-meta, .reply {
+        position: absolute;
+        top: 36px;
+        font: $index-info-font;
+
+        a { 
+            color: gray ;
+        }
+
+        a:hover {
+            color: #4d5256;
+        }
+    }
+
+    .comment-meta {
+        right: 30px;
+    }
+
+    .reply {
+        right: 0;
+    }
+
+    .says {
+        font: $index-info-font;
+        color:  gray;
+        padding-left: 6px;
+    }
+}
+
+
+#respond {
+    border-top: 2px solid #d9d9d9;
+    position: relative;
+
+    #submit {
+        cursor: pointer;
+        border: 2px solid #ccd3d7;
+        border-radius: 4px;
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 10px;
+        font: $comment-font;
+        font-weight: bold;
+    }
+
+}
+
+.logged-in-as, .error {
+    font: $index-title-font;
+    font-size: 20px;
+    padding:20px 0;
+
+    a {
+        color: #007998;
+
+        &:hover {
+            color: #7fbccb;
+        }
+    }
+}
+#reply-title {
+    display: none;
+
+}
+.comment-form-comment {
+
+    textarea {
+        border: 2px solid #ccd3d7;
+        border-radius: 4px;
+        cursor: text;
+        resize: none;
+        display: block;
+        padding: 6px 10px 8px;
+        margin: 0;
+        width: 100%;
+        
+        height: 40px;
+        min-height: 44px;
+        line-height: 1.4;
+        font: $comment-font;
+    }
+
+
+
+    label {
+        display: none;
+    }
+}
+
