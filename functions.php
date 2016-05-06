@@ -63,11 +63,11 @@ function my_post_queries( $query ) {
     // alter the query for the home and category pages 
 
     if(is_home()){
-      $query->set('posts_per_page', 3);
+      $query->set('posts_per_page', 5);
     }
 
     if(is_category()){
-      $query->set('posts_per_page', 3);
+      $query->set('posts_per_page', 5);
     }
 
   }
